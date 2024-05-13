@@ -1,85 +1,33 @@
+/*-----전체 선택자-----*/
 body{
-    background-color: #282828;
-    width: 100vw;
-    height: 100vh;
     margin: 0;
+    background-color: black;
 }
-a{
+/*-----전체 선택자-----*/
+
+/*-----상단 메뉴 바-----*/
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
-hr{
-    border: solid #282828;
-}
-/* ---------------상단 메뉴 바---------------*/
-.menu_bar_top{
-    position: fixed;
-    display: block;
-    background-color: yellowgreen;
-    border-bottom: 1vh solid black;
-    width: 100vw;
-    height: 5vh;
-    left: 0;
-    top: 0;
-    z-index: 10;
-}
-.menu_bar_top a{
+.navbar a:hover {
+    background-color: black;
     color: white;
 }
-.menu_bar_top a:hover{
-    color: black;
+.navbar a#login,
+.navbar a#signup {
+    float: right;
 }
-.menu_bar_top ul{
-    margin: 0;
-    padding: 0;
-}
-.menu_bar_top li{
-    display: inline-block;
-    margin: 0vw;
-    padding: 0vw 3vw;
-    font-size: 2vw;
-    font-weight: bold;
-}
-/* ---------------상단 메뉴 바---------------*/
-
-/* ---------------사이드 메뉴 바---------------*/
-.menu_bar_side{
-    position: fixed;
-    display: block;
-    background-color: yellowgreen;
-    height: 100vh;
-    width: 13vw;
-    left: 0;
-    top: 6vh;
-    margin: 0;
-    padding: 0;
-    color: white;
-    border-right: 1vh solid black;
-}
-.menu_bar_side ul{
-    margin: 0;
-    padding: 0;
-}
-.menu_bar_side li{
-    font-weight: bold;
-}
-.menu_bar_side a{
-    color: white;
-}
-.menu_bar_side a:hover{
-    color: black;
-}
-/* ---------------사이드 메뉴 바---------------*/
-.main_title{
-    text-align: center;
-    top: 7vh;
-}
-.test{
-    display: inline-block;
-    width: 50vW;
-    position: relative;
-    left: 14vw;
-    top: 6vh;
-    border: 10px solid black;
-    z-index: 11; /*확인용 임시*/
-}
-
+/*-----상단 메뉴 바-----*/
