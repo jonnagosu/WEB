@@ -1,7 +1,7 @@
 /*-----전체 선택자-----*/
 body{
     margin: 0;
-    background-color: black;
+    background-color: #484848; /*검정색으로 할 예정*/
 }
 /*-----전체 선택자-----*/
 
@@ -11,23 +11,44 @@ body{
     background-color: black;
     position: fixed;
     width: 100%;
+    border-bottom: 3px solid red;
     z-index: 1;
 }
 .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: red;
     font-weight: bold;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 .navbar a:hover {
-    background-color: black;
-    color: white;
+    text-shadow: 0px 0px 5px red;
 }
 .navbar a#login,
 .navbar a#signup {
     float: right;
 }
 /*-----상단 메뉴 바-----*/
+
+/*-----사이드 메뉴 바-----*/
+.sidebar{
+    overflow: scroll;
+    height: 100%;
+    width: 10%;
+    background-color: black;
+    position: fixed;
+    padding-top: 50px;
+    border-right: 3px solid red;
+    color: red;
+}
+.sidebar a{
+    color: red;
+}
+/*-----사이드 메뉴 바-----*/
+
+.main_title{
+    display: block;
+    text-align: center;
+}
