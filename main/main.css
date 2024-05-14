@@ -1,7 +1,7 @@
 /*-----전체 선택자-----*/
 body{
     margin: 0;
-    background-color: #484848; /*검정색으로 할 예정*/
+    background-color: #484848; 
 }
 /*-----전체 선택자-----*/
 
@@ -30,6 +30,27 @@ body{
 .navbar a#signup {
     float: right;
 }
+/*--테마--*/
+.theme {
+    float: right;
+    width: 250px;
+    margin: 15px auto;
+}
+.them_text {
+    float: left;
+    padding: 0 5px 0 0;
+    color: red;
+    font-weight: bold;
+}
+a.them {
+    display: block;
+    float: left;
+    padding: 2px 10px;
+}
+.them img{
+    filter: #ffffff;
+    border: white solid 1px;
+}
 /*-----상단 메뉴 바-----*/
 
 /*-----사이드 메뉴 바-----*/
@@ -46,9 +67,66 @@ body{
 .sidebar a{
     color: red;
 }
+
 /*-----사이드 메뉴 바-----*/
 
+/*-----센터 상단 제목 + 검색-----*/
 .main_title{
     display: block;
     text-align: center;
+}
+.search{
+    display: block;
+    float: right;
+    margin-right: 15px;
+    padding: 1px;
+    width: 215px;
+    height: 30px;
+}
+.search input[type="search"]{
+    border: none;
+    height: 30px;
+    width: 215px;
+}
+.search img{
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 30px;
+}
+/*-----센터 상단 제목 + 검색-----*/
+
+/*-----중앙 컨텐츠(이 달의 아티스트)-----*/
+.artist_frame{
+    margin-left: 11%;
+    border: 2px yellow solid; /*예비 확인 선*/
+    width: 88%;
+    height: 330px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.artist_profile{
+    background-color: white; /*예비 확인 용*/
+    position: relative;
+    display: inline-block;
+    width: 230px;
+    height: 290px;
+    text-align: center;
+    float: left;
+}
+.artist_profile img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    display: block;
+}
+.artist_frame #title{
+    margin: 5px 5px 5px 20px;
+}
+.artist_profile #name{
+    display: block;
+    position: relative;
+    top: 60%;
 }
