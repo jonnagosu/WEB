@@ -97,24 +97,25 @@ a.them {
 /*-----센터 상단 제목 + 검색-----*/
 
 /*-----중앙 컨텐츠(이 달의 아티스트)-----*/
-.artist_frame{
+.content_frame{
     margin-left: 11%;
-    border: 2px yellow solid; /*예비 확인 선*/
+    border: 1px none;
     width: 88%;
     height: 330px;
     overflow-x: scroll;
-    white-space: nowrap;
+    
 }
-.artist_profile{
-    background-color: white; /*예비 확인 용*/
+.content_box{
     position: relative;
     display: inline-block;
     width: 230px;
     height: 290px;
     text-align: center;
     float: left;
+    border: 3px grey inset;
+    margin: 15px;
 }
-.artist_profile img{
+.content_box img{
     width: 150px;
     height: 150px;
     position: absolute;
@@ -122,11 +123,18 @@ a.them {
     left: 40px;
     display: block;
 }
-.artist_frame #title{
+.artist_frame .title{
     margin: 5px 5px 5px 20px;
 }
-.artist_profile #name{
+.content_box .name{
     display: block;
     position: relative;
     top: 60%;
 }
+/*-----중앙 컨텐츠(이 달의 아티스트)-----*/
+
+/*-----중앙 컨텐츠 (장르 추천)-----*/
+.page_info{
+    text-align: center;
+}
+/*-----중앙 컨텐츠 (장르 추천)-----*/
