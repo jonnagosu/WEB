@@ -154,11 +154,23 @@ a.them {
 /*-----인기 차트-----*/
 .chart{
     margin-left: 11%;
+    border: 3px inset
     
+}
+.chart h3{
+    margin-left: 15px;
 }
 .chart_list li{
     margin: 10px 0px;
     border: 3px solid black;
     list-style-position: inside;
+    width: 96%;
+}
+.chart_list_text_a:hover{
+    color: red;
+}
+.chart_list_img{
+    float: right;
+    margin: 0px 13px;
 }
 /*-----인기 차트-----*/
