@@ -1,7 +1,7 @@
 /*-----전체 선택자-----*/
 body{
     margin: 0;
-    background-color: #484848; 
+    background-color: black; 
 }
 /*-----전체 선택자-----*/
 
@@ -24,20 +24,19 @@ body{
     background-color: black;
     position: fixed;
     width: 100%;
-    border-bottom: 3px solid red;
-    z-index: 1;
+    z-index: 2;
 }
 .navbar a {
     float: left;
     display: block;
-    color: red;
+    color: yellowgreen;
     font-weight: bold;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 .navbar a:hover {
-    text-shadow: 0px 0px 5px red;
+    text-shadow: 0px 0px 5px yellowgreen;
 }
 .navbar a#login,
 .navbar a#signup {
@@ -52,7 +51,7 @@ body{
 .them_text {
     float: left;
     padding: 0 5px 0 0;
-    color: red;
+    color: yellowgreen;
     font-weight: bold;
 }
 a.them {
@@ -69,16 +68,15 @@ a.them {
 /*-----사이드 메뉴 바-----*/
 .sidebar{
     overflow: scroll;
-    height: 100%;
+    height: 98%;
     width: 10%;
     background-color: black;
     position: fixed;
     padding-top: 50px;
-    border-right: 3px solid red;
-    color: red;
+    color: yellowgreen;
 }
 .sidebar a{
-    color: red;
+    color: yellowgreen;
 }
 
 /*-----사이드 메뉴 바-----*/
@@ -87,6 +85,7 @@ a.them {
 .main_title{
     display: block;
     text-align: center;
+    color: yellowgreen;
 }
 .search{
     display: block;
@@ -118,14 +117,24 @@ a.them {
     overflow-x: scroll;
     white-space: nowrap;
 }
+.content_frame h3{
+    color: yellowgreen;
+}
 .content_box{
     position: relative;
     display: inline-block;
     width: 230px;
     height: 290px;
     text-align: center;
-    border: 3px grey inset;
+    border: none;
+    border-radius: 25px;
     margin: 0px 10px 0px 0px;
+    background-color: #484848;
+    box-shadow: 5px 5px #191919;
+}
+.content_box:hover{
+    transition: 0.5s ease-out;
+    transform: scale(1.05);
 }
 .content_box img{
     width: 150px;
@@ -142,12 +151,14 @@ a.them {
     display: block;
     position: relative;
     top: 60%;
+    color: black;
 }
 /*-----중앙 컨텐츠(컨텐츠 박스)-----*/
 
 /*-----페이지 마무리 정보-----*/
 .page_info{
     text-align: center;
+    color: yellowgreen;
 }
 /*-----페이지 마무리 정보-----*/
 
@@ -159,18 +170,81 @@ a.them {
 }
 .chart h3{
     margin-left: 15px;
+    color: yellowgreen;
 }
 .chart_list li{
     margin: 10px 0px;
-    border: 3px solid black;
+    border: 3px solid white;
     list-style-position: inside;
     width: 96%;
+    color: white;
 }
 .chart_list_text_a:hover{
-    color: red;
+    color: yellowgreen;
+    visibility: visible;
 }
 .chart_list_img{
     float: right;
     margin: 0px 13px;
 }
+.hivelist{
+    background-color: black;
+    color: white;
+    display: none;
+    visibility: hidden; /*사실 visibility는 필요 없음..*/
+}
+.hivelist:hover{
+    color: yellowgreen;
+}
+.chart_list #li_1:hover #hli_1,
+.chart_list #li_2:hover #hli_2,
+.chart_list #li_3:hover #hli_3,
+.chart_list #li_4:hover #hli_4,
+.chart_list #li_5:hover #hli_5{
+    display: block;
+    visibility: visible;
+}
 /*-----인기 차트-----*/
+
+/*-----중앙 컨텐츠 자주 듣는 음악 (혹은 음악 추천)-----*/
+.music_list{
+    
+    margin-left: 11%;
+}
+.music_list h3{
+    color: yellowgreen;
+}
+.music_box{
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+    margin: 10px;
+    overflow: hidden;
+}
+.music_box img{
+    width: 100%;
+    height: 100%;
+}
+.hivebox{
+    position: absolute;
+    z-index: 1;
+    background: black;
+    opacity: 0.5;  /*투명도 50%*/
+    transition: 0.5s; /*올라오는 이미지 부여! 깨달았다!*/
+    padding: 10px;
+    width: 100%;
+    height: 50%;
+    bottom: -100%;
+    color: white;
+}
+.music_box:hover .hivebox{
+    bottom: 0;
+}
+.hivebox .tag{
+    border: 2px solid #484848;
+    border-radius: 10px;
+    padding: 3px;
+    font-style: italic;
+}
+/*-----중앙 컨텐츠 자주 듣는 음악 (혹은 음악 추천)-----*/

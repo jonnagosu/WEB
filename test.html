@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .div1 {
+            border: 1px solid black;
+            padding: 10px;
+            position: relative;
+        }
+        .div2 {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid black; /* div1의 보더 안에서 표시되도록 추가 */
+        }
+        .div1:hover .div2 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        Hover over me!
+        <div class="div2">
+            This is div2 content.
+        </div>
+    </div>
+</body>
+</html>
