@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fossile Music</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <!------------------------------ 상단 메뉴 바 ------------------------------>
     <div class="navbar">
-        <a href="#navbar">Home</a>
-        <a href="#">chart</a>
-        <a href="#">My page</a>
-        <a href="#">Buy</a>
+        <a href="#navbar"><h2>Fossile Music</h2></a>
+            <a href="#sidebar"><button class="menubutton"><img src="resource/img/menu_icon.png"></button></a>
         <a href="login/logins.html" id="login">로그인</a>
         <a href="signup/signup.html" id="signup">회원가입</a>
+        <!-----검색 바----->
+        <div class="search">
+            <input type="search" placeholder="Search">
+            <img src="resource/img/search_icon2.png">
+        </div>
+        <!----- 테마 ----->
         <div class="theme">
             <div class="them_text">Theme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
             <a href="" class="them"><img src="resource/img/app-indicator.svg"></a>
@@ -22,89 +26,107 @@
             <a href="" class="them"><img src="resource/img/app-indicator.svg"></a>
             <a href="" class="them"><img src="resource/img/app-indicator.svg"></a>
         </div>
+        <!-- 밑에 작은 버튼들 (아마 카테고리 및 알고리즘 키워드로 쓸 예정)-->
+        <div class="navbar_option">
+            <span class="option"><a href="#">힙합</a></span>
+            <span class="option"><a>K-pop</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+            <span class="option"><a>##</a></span>
+        </div>
     </div>
     <!------------------------------ 상단 메뉴 바 ------------------------------>
     
     <!------------------------------ 사이드 메뉴 바 ------------------------------>
-    <div class="sidebar">
-        <h3>카테고리</h3>
-            <ol>
-                <li>힙합
-                    <ul>
-                        <li><a>붐뱁</a></li>
-                        <li><a>트랩</a></li>
-                        <li><a>드릴</a></li>
-                        <li><a>emo</a></li>
-                        <li><a>싱잉</a></li>
-                    </ul>
-                </li>
-                <li>힙합
-                    <ul>
-                        <li><a>붐뱁</a></li>
-                        <li><a>트랩</a></li>
-                        <li><a>드릴</a></li>
-                        <li><a>emo</a></li>
-                        <li><a>싱잉</a></li>
-                    </ul>
-                </li>
-                <li>힙합
-                    <ul>
-                        <li><a>붐뱁</a></li>
-                        <li><a>트랩</a></li>
-                        <li><a>드릴</a></li>
-                        <li><a>emo</a></li>
-                        <li><a>싱잉</a></li>
-                    </ul>
-                </li>
-                <li>힙합
-                    <ul>
-                        <li><a>붐뱁</a></li>
-                        <li><a>트랩</a></li>
-                        <li><a>드릴</a></li>
-                        <li><a>emo</a></li>
-                        <li><a>싱잉</a></li>
-                    </ul>
-                </li>
-                <li>힙합
-                    <ul>
-                        <li><a>붐뱁</a></li>
-                        <li><a>트랩</a></li>
-                        <li><a>드릴</a></li>
-                        <li><a>emo</a></li>
-                        <li><a>싱잉</a></li>
-                    </ul>
-                </li>
-                <li>힙합
-                    <ul>
-                        <li><a>붐뱁</a></li>
-                        <li><a>트랩</a></li>
-                        <li><a>드릴</a></li>
-                        <li><a>emo</a></li>
-                        <li><a>싱잉</a></li>
-                    </ul>
-                </li>
-            </ol>
+    <div class="sidebar" id="sidebar">
+        &nbsp;<a href="#"><button>&times;</button></a>
+            <ul class="sidebar_list">
+                <a href="#"><li>
+                    <img src="resource/img/mypage.png" alt="mypage_icon"> My page
+                </li></a>
+                <a href="#"><li>
+                    <img src="resource/img/playlist_icon.png" alt="playlist_icon"> Playlist
+                </li></a>
+                <a href="#"><li>
+                    <span id="fan_icon">★</span> Fan Artist
+                </li></a>
+                <a href="#"><li>
+                    <img src="resource/img/history_icon.png" alt="history_icon"> History
+                </li></a>
+                <hr>
+                <a href="#"><li>
+                    <img src="resource/img/app-indicator.svg" alt="pre_icon"> ##
+                </li></a>
+                <a href="#"><li>
+                    <img src="resource/img/app-indicator.svg" alt="pre_icon"> ##
+                </li></a>
+                <a href="#"><li>
+                    <img src="resource/img/app-indicator.svg" alt="pre_icon"> ##
+                </li></a>
+                <a href="#"><li>
+                    <img src="resource/img/app-indicator.svg" alt="pre_icon"> ##
+                </li></a>
+                <a href="#"><li>
+                    <img src="resource/img/app-indicator.svg" alt="pre_icon"> ##
+                </li></a>
+                <a href="#"><li>
+                    <img src="resource/img/app-indicator.svg" alt="pre_icon"> ##
+                </li></a>
+                <a href="#"><li>
+                    <img src="resource/img/app-indicator.svg" alt="pre_icon"> ##
+                </li></a>
+            </ul>
             ___________ <!--마지막 항목 숨겨짐 방지-->
     </div>
     <!------------------------------ 사이드 메뉴 바 ------------------------------>
 
-    <!------------------------------ 센터 상단 제목 + 검색 ------------------------------>
-    <br>
-    <br>
-    <h1 class="main_title">Fossile Music</h1>
-        <div class="search">
-            <input type="search" placeholder="Search">
-            <img src="resource/img/search_icon.jpg">
+    <!-------------------------------- 뮤직 플레이어 ------------------------------->
+    <div class="player_frame" id="player_pre">
+        <a href="#"><button>&times;</button></a>
+        <iframe src="/project/player/player2.html"></iframe>
+    </div>
+    <!-------------------------------- 뮤직 플레이어 ------------------------------->
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!------------------------------ 메인 페이지 ------------------------------>
+    <div class="main_page">
+        <div class="textbox">
+            <h1>Welcome, this is Fossile Music.</h1>
+            <p>An archive with a fossil-like history</p>
         </div>
-    <!------------------------------ 센터 상단 제목 + 검색 ------------------------------>
-    <hr>
+    </div>
+    <!------------------------------ 메인 페이지 ------------------------------>
 
     <!------------------------------ 중앙 컨텐츠 (이 달의 아티스트) ------------------------------>
     <div class="content_frame">
         <h3 class="title">Artist of this Month</h3>
         <div class="content_box">
-            <img src="resource/img/img_pre.png">
-            <h3 class="name">artist name</h3>
+            <a href="#player_pre"><img src="resource/img/img_pre.png"></a>
+            <h3 class="name">임시 플레이어 버튼</h3>
         </div>
         <div class="content_box">
             <img src="resource/img/img_pre.png">
@@ -196,8 +218,12 @@
                 <img src="resource/img/app-indicator.svg" alt="즐겨찾기" class="chart_list_img">
                 <img src="resource/img/app-indicator.svg" alt="재생" class="chart_list_img">
                 <div class="hivelist" id="hli_1">
-                    &nbsp;&nbsp;1. lorem lorem lorem lorem <br>
-                    &nbsp;&nbsp;2. lorem lorem lorem lorem
+                    <img src="resource/img/music1.webp" alt="앨범커버">
+                    <div class="hivetext">
+                    <p>lorem lorem lorem lorem lorem</p>
+                    <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+                    
                 </div>
             </li>
             <li id="li_2">
@@ -254,32 +280,32 @@
         <h3><i>#Username</i>님의 취향 반영 플레이리스트</h3>
         <!--i는 일부로, 사용자 이름 넣는 느낌으로 표현-->
         <div class="music_box" >
-            <img src="resource/img/img_pre.png" alt="앨범커버">
+            <img src="resource/img/die4you.jpg" alt="앨범커버">
             <div class="hivebox" >
-                <h4>song name</h4>
-                <span class="tag">#tag1</span>
-                <span class="tag">#tag2</span>
-                <span class="tag">#tag3</span>
+                <h4>die 4 you</h4>
+                <span class="tag">dean</span>
+                <span class="tag">R&B</span>
+                <span class="tag">싱글</span>
             </div>
         </div>
         
         <div class="music_box" >
-            <img src="resource/img/img_pre.png" alt="앨범커버">
+            <img src="resource/img/music_ant.jpg" alt="앨범커버">
             <div class="hivebox" >
-                <h4>song name</h4>
-                <span class="tag">#tag1</span>
-                <span class="tag">#tag2</span>
-                <span class="tag">#tag3</span>
+                <h4>앨범-개미</h4>
+                <span class="tag">QM</span>
+                <span class="tag">hip-hop</span>
+                <span class="tag">우울</span>
             </div>
         </div>
 
         <div class="music_box" >
-            <img src="resource/img/img_pre.png" alt="앨범커버">
+            <img src="resource/img/music1.webp" alt="앨범커버">
             <div class="hivebox" >
-                <h4>song name</h4>
-                <span class="tag">#tag1</span>
-                <span class="tag">#tag2</span>
-                <span class="tag">#tag3</span>
+                <h4>supershy</h4>
+                <span class="tag">newjeans</span>
+                <span class="tag">K-pop</span>
+                <span class="tag">Top-Rated</span>
             </div>
         </div>
 
