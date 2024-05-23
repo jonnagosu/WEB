@@ -103,8 +103,12 @@
 
     <!-------------------------------- 뮤직 플레이어 ------------------------------->
     <div class="player_frame" id="player_pre">
-        <a href="#"><button>&times;</button></a>
-        <iframe src="/project/player/player2.html"></iframe>
+        <a href="#" class="play_close"><button>&times;</button></a>
+        <div class="buttonbox">
+        <a href="/project/player/music.html" target="player_i"><button type="button" class="to_music">노래</button></a>
+        <a href="/project/player/video.html" target="player_i"><button type="button" class="to_video">동영상</button></a>
+        </div>
+        <iframe src="/project/player/music.html" name="player_i"></iframe>
     </div>
     <!-------------------------------- 뮤직 플레이어 ------------------------------->
 <br>
@@ -282,8 +286,8 @@
         <div class="music_box" >
             <img src="resource/img/die4you.jpg" alt="앨범커버">
             <div class="hivebox" >
-                <h4>die 4 you</h4>
-                <span class="tag">dean</span>
+                <h4><a>die 4 you</a></h4>
+                <span class="tag"><a>dean</a></span>
                 <span class="tag">R&B</span>
                 <span class="tag">싱글</span>
             </div>
