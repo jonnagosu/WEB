@@ -1,3 +1,89 @@
 body{
     background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_field{
+    text-align: center;
+    background-color: black;
+    color: yellowgreen;
+    margin-top: 7vh;
+    width: 35vw;
+    height: 80vh;
+    border-radius: 3vw;
+    box-shadow: 5px 5px 3px #191919;
+}
+.login_field h3{
+    font-size: 2vw;
+    text-align: center;
+    display: block;
+    margin: 4vw;
+    padding-top: 5vh;
+}
+.login_field .input_box{
+    display: block;
+}
+.input_box input{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 0.5vh solid yellowgreen;
+    font-size: 1.5vw;
+    margin: 2vw;
+    color: yellowgreen;
+}
+.input_box input::placeholder{
+    color: yellowgreen;
+}
+.button_box button{
+    width: 5vw;
+    height: 4vh;
+    background-color: yellowgreen;
+    border: none;
+    font-weight: bold;
+}
+.button_box button:hover{
+    border: 2px inset gray;
+}
+.button_box .login{
+    border-radius: 1vw 0vw 0vw 1vw;
+}
+.button_box .signin{
+    border-radius: 0vw 1vw 1vw 0vw;
+}
+.url_box{
+    margin-top: 2vh;
+}
+.url_box div{
+    width: 25vw;
+    height: 7vh;
+    margin: 1vh;
+    display: inline-block;
+    border-radius: 1vw ;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: black;
+    text-align: center;
+}
+.naver{
+    background-color: green;
+}
+.naver:hover{
+    background-color: black;
+    color: green;
+}
+.google{
+    background-color: white;
+}
+.google:hover{
+    background-color: black;
+    color: white;
+}
+.kakao{
+    background-color: yellow;
+}
+.kakao:hover{
+    background-color: black;
+    color: yellow;
 }

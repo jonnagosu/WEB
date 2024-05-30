@@ -1,4 +1,4 @@
-/* 현재 z-index 3 단계*/
+/* 현재 z-index 3 단계 */
 /*-----전체 선택자-----*/
 body{
     margin: 0;
@@ -355,7 +355,7 @@ a.them {
 }
 .chart_list li{
     margin: 10px 0px;
-    border: 3px solid white;
+    background-color: #191919;
     list-style-position: inside;
     width: 96%;
     color: white;
@@ -371,7 +371,7 @@ a.them {
     margin: 0px 13px;
 }
 .hivelist{
-    background-color: black;
+    background-color: #191919;
     color: white;
     display: none;
     visibility: hidden; /*사실 visibility는 필요 없음..*/
@@ -384,8 +384,9 @@ a.them {
 .chart_list #li_3:hover #hli_3,
 .chart_list #li_4:hover #hli_4,
 .chart_list #li_5:hover #hli_5{
-    display: block;
+    display: flex;
     visibility: visible;
+    align-items: center;
 }
 .hivelist img{
     width: 150px;
@@ -398,7 +399,6 @@ a.them {
 }
 .hivetext{
     display: inline-block;
-    border: 1px solid white;
 }
 /*-----인기 차트-----*/
 

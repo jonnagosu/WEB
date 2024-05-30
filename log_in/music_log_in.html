@@ -7,8 +7,25 @@
     <title>Document</title>
 </head>
 <body>
+    <form>
     <div class="login_field">
-        Log in
+        <h3>Log In</h3>
+        <div class="input_box">
+            <input type="text" placeholder="ID" required><br>
+            <input type="password" placeholder="password" readonly>
+        </div>
+<!--------------------------------------------------------------------------->
+        <div class="button_box">
+            <button type="submit" class="login">login</button>
+            <a href="#"><button type="button" class="signin">Sign in</button></a>
+        </div>
+<!--------------------------------------------------------------------------->
+        <div class="url_box">
+            <a href="http://www.naver.com"><div class="naver">Log in with naver</div></a>
+            <a><div class="google">Log in with google</div></a>
+            <a><div class="kakao">Log in with kakao</div></a>
+        </div>
     </div>
+    </form>
 </body>
 </html>
