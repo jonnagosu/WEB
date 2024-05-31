@@ -7,6 +7,10 @@ body{
 a{
     text-decoration: none;
 }
+a:visited{
+    text-decoration: none;
+    color: white;
+}
 /*-----전체 선택자-----*/
 
 /*-----스크롤 바-----*/
@@ -113,8 +117,10 @@ a.them {
     margin: 5px;
     padding: 5px auto;
     text-align: center;
+    font-size: 14px;
     background-color: #484848;
     box-shadow: 3px 3px #191919;
+    overflow: hidden;
 }
 .option:hover{
     background-color: #585858;
@@ -126,6 +132,9 @@ a.them {
     font-weight: bold;
     text-decoration: none;
     color: black;
+}
+.option:hover a{
+    color: white;
 }
 /*----검색-----*/
 .search{
@@ -224,7 +233,7 @@ a.them {
     margin-left: 40px;
 }
 .player_frame .play_close{
-    position: fixed;
+    position: absolute;
 }
 .player_frame .buttonbox{
     margin-left: 140px;
@@ -317,6 +326,7 @@ a.them {
     top: 15px;
     left: 40px;
     display: block;
+    border: 2px solid black;
 }
 .artist_frame .title{
     margin: 5px 5px 5px 20px;
@@ -326,6 +336,9 @@ a.them {
     position: relative;
     top: 60%;
     color: black;
+}
+.content_box:hover .name{
+    color: white; /*색을 뭘로 하지*/
 }
 /*-----중앙 컨텐츠(컨텐츠 박스)-----*/
 
