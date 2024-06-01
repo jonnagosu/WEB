@@ -72,6 +72,10 @@ p{
     padding: 1vh;
     float: left;
 }
+.box:hover{
+    filter: brightness(120%);
+    background-color: #191919;
+}
 .box img{
     width: 5vw;
     height: 5vw;
