@@ -6,6 +6,15 @@ body{
 a{
     text-decoration: none;
 }
+h2{
+    font-size: 2vw;
+}
+h3{
+    font-size: 1.5vw;
+}
+p{
+    font-size: 2vh;
+}
 /* 전체 선택자 */
 
 .navbar{
@@ -14,16 +23,21 @@ a{
     height: 13vh;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 /*상단 메뉴바 구역 표시*/
-
+.title{
+    margin-left: 3vw;
+    font-size: 2.5vw;
+}
 .sec1{
     border: 0.1vw solid white;
     width: 90vw;
     height: 25vw;
     display: flex;
     margin: 5vw;
+    padding: 2vh;
     align-items: center;
 }
 .sec1 img{
@@ -34,6 +48,38 @@ a{
     position: relative;
     margin: 1vw 10vw;
 }
-.sec1_info h2{
-    font-size: 2vw;
+
+.name a{
+    font-size: 3vh;
+    color: yellowgreen;
+}
+.name a:hover{
+    text-decoration: underline;
+}
+
+.sec2 textarea{
+    font-size: 3vh;
+    color: yellowgreen;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 5vw;
+    border: none;
+}
+.box{
+    display: flex;
+    align-items: center;
+    width: 15vw;
+    height: 11vh;
+    padding: 1vh;
+    float: left;
+}
+.box img{
+    width: 5vw;
+    height: 5vw;
+}
+.box_text{
+    margin: 0 1vh;
+}
+.sec3{
+    width: 90vw;
+    margin: 5vw;
 }
